@@ -1,0 +1,15 @@
+{
+  "name": "editkitz",
+  "owner": { "name": "EditKitz" },
+  "metadata": {
+    "description": "EditKitz plugins for Claude Code: make clips with the free browser clip maker."
+  },
+  "plugins": [
+    {
+      "name": "editkitz",
+      "source": "./plugins/editkitz",
+      "description": "Make countdowns, number counters, search bar typing, bar chart races and notification popups with EditKitz. Claude fills in a Tool and gives you a link; you press Export.",
+      "homepage": "https://docs.editkitz.com"
+    }
+  ]
+}
