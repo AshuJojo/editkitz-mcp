@@ -1,8 +1,9 @@
 {
   "name": "editkitz",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": { "name": "EditKitz" },
   "description": "Make clips with EditKitz, the free browser clip maker: Claude prefills a Tool and gives you a link, you press Export.",
+  "license": "MIT",
   "homepage": "https://docs.editkitz.com",
   "keywords": ["mcp", "video", "clip", "countdown", "animation"]
 }
