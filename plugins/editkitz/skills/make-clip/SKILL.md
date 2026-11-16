@@ -13,7 +13,7 @@ EditKitz renders clips in the user's own browser. You cannot produce the video f
    - `create_search_bar_typing_animation`: a query typed into a search bar.
    - `create_bar_chart_race`: bars racing over time.
    - `create_notification_popup_animation`: a phone-style notification sliding in.
-2. Call it with only the options the user asked for. Every option is optional and has a default; read the tool's input schema for names and ranges.
+2. Before calling, load that tool's input schema so you know the exact option names, types and ranges. Map every detail the user gave to an option: "a 10 second countdown with heavy grain" means `start` 10 and `grain` "high". Never call a tool with empty arguments when the user asked for anything specific, because the link would open with the defaults. Leave out only the options the user did not mention; each has a default.
 3. If the call returns an "Invalid options" error, fix the named option using the range in the message and call again.
 4. Reply with the returned link and tell the user to open it, check the preview and press **Export** to download the MP4.
 

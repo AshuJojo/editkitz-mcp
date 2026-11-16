@@ -1,6 +1,6 @@
 {
   "name": "editkitz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": { "name": "EditKitz" },
   "description": "Make clips with EditKitz, the free browser clip maker: Claude prefills a Tool and gives you a link, you press Export.",
   "homepage": "https://docs.editkitz.com",
