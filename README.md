@@ -1,6 +1,6 @@
 # EditKitz MCP
 
-Make clips with [EditKitz](https://editkitz.com), the free browser clip maker, from your AI assistant. The assistant fills in a Tool (film leader countdown, number counter, search bar typing, bar chart race, notification popup) and gives you a link; you open it and press Export. The video is rendered in your browser, with no account.
+Make clips with [EditKitz](https://editkitz.com), the free browser clip maker, from your AI assistant. The assistant fills in a Tool (film leader countdown, number counter, search bar typing, bar chart race, notification popup, text message chat) and gives you a link; you open it and press Export. The video is rendered in your browser, with no account.
 
 The MCP server is hosted by EditKitz at:
 
