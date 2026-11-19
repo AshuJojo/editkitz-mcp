@@ -4,7 +4,7 @@ Make short custom clips with [EditKitz](https://editkitz.com), the free clip mak
 
 ## What you get
 
-- **The EditKitz MCP server**, a remote server at `https://editkitz.com/mcp` with one tool for each EditKitz clip maker: film leader countdown, number counter, search bar typing, bar chart race and notification popup.
+- **The EditKitz MCP server**, a remote server at `https://editkitz.com/mcp` with one tool for each EditKitz clip maker: film leader countdown, number counter, search bar typing, bar chart race, notification popup and text message chat.
 - **The `make-clip` skill**, which maps what you ask for to the right tool and its options, and returns the prefilled link.
 
 ## Install
