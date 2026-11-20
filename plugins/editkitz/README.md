@@ -20,4 +20,4 @@ Ask: "Make a 10 second film leader countdown with heavy grain." Claude answers w
 
 ## Privacy and limits
 
-The server only builds a link from the options Claude sends. It needs no sign-in, stores nothing and keeps no sessions. Options that need a file upload, such as custom icons or images, are not available. See the [privacy policy](https://editkitz.com/privacy) and the [documentation](https://docs.editkitz.com).
+The server only builds a link from the options Claude sends. It needs no sign-in, stores nothing and keeps no sessions. Options that need a file upload, such as custom icons, images or audio, are not available; for example, the film leader countdown's own background images and audio are uploaded on its page after you open the link. See the [privacy policy](https://editkitz.com/privacy) and the [documentation](https://docs.editkitz.com).

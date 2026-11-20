@@ -20,4 +20,4 @@ EditKitz renders clips in the user's own browser. You cannot produce the video f
 
 For a text message chat, pass the whole conversation in the `chat` option: one line per message, each starting with `<` for the left speaker or `>` for the right speaker, then the text. It is for story content, so write the conversation the user asked for.
 
-Do not promise a finished video, and do not invent options the schema does not list. Icons and images that need an upload are not available through this server.
+Do not promise a finished video, and do not invent options the schema does not list. Icons, images and audio that need an upload are not available through this server. For the film leader countdown that means a background image (one, or one per count) and the user's own audio: set the background color and the built-in sound through the options, and tell the user to open the link and upload their own image or audio on the page (it stays in their browser). The countdown also has `num`, `cross` and `circles` options to hide the big number, the crosshair and the two circles.
