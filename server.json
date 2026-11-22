@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.AshuJojo/editkitz-mcp",
   "title": "EditKitz",
-  "description": "Make short custom clips (countdowns, counters, typing, charts) as prefilled EditKitz links.",
+  "description": "Make short custom clips (countdowns, counters, typing, charts, popups, group chats) as prefilled EditKitz links.",
   "websiteUrl": "https://docs.editkitz.com",
   "repository": {
     "url": "https://github.com/AshuJojo/editkitz-mcp",
