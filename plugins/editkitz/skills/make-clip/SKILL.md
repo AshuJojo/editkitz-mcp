@@ -11,7 +11,7 @@ EditKitz renders clips in the user's own browser. You cannot produce the video f
    - `create_film_leader_countdown`: old film countdown with grain and scratches.
    - `create_number_counter_animation`: a number counting from one value to another.
    - `create_search_bar_typing_animation`: a query (or several) typed into a search bar, with key and click sounds and an optional results page.
-   - `create_bar_chart_race`: bars racing over time.
+   - `create_bar_chart_race`: bars racing over time, with rank numbers, an axis, logos, bar styles and step sounds.
    - `create_notification_popup_animation`: a phone-style notification sliding in.
    - `create_text_message_chat_maker`: a one-on-one or group text conversation appearing bubble by bubble, with typing dots, voice notes, pictures, reactions, read receipts and sounds.
 2. Before calling, load that tool's input schema so you know the exact option names, types and ranges. Map every detail the user gave to an option: "a 10 second countdown with heavy grain" means `start` 10 and `grain` "high". Never call a tool with empty arguments when the user asked for anything specific, because the link would open with the defaults. Leave out only the options the user did not mention; each has a default.
@@ -26,4 +26,13 @@ For a text message chat, pass the whole conversation in the `chat` option: one l
 - Other options: `receipts` (Delivered then Read, on by default), `send` and `receive` (sound ids, or `off`), `look` (light, dark, blush, ocean, forest), `shape`, `frame` and `status` (phone frame and status bar).
 - The chat can run up to 5 minutes.
 
-Do not promise a finished video, and do not invent options the schema does not list. Icons, images and audio that need an upload are not available through this server. For the text message chat that means pictures in messages, avatar pictures, own sounds and the audio of voice notes; for the search bar typing it means own key and click sounds. A picture message in a link shows a stand-in, and a voice note is silent until the user uploads the audio on the page (it stays in their browser). For the film leader countdown that means a background image (one, or one per count) and the user's own audio: set the background color and the built-in sound through the options, and tell the user to open the link and upload their own image or audio on the page (it stays in their browser). The countdown also has `num`, `cross` and `circles` options to hide the big number, the crosshair and the two circles.
+For a bar chart race, the link sets the look, timing and text. It carries **no data**: the page shows the user's own saved table, or sample data about video editing apps. So set `title` to match the user's subject, and tell them to add their data on the page (type it, paste it, or import CSV or Excel).
+
+- **Chart:** `bars` (how many show), `order` (`largest`, `smallest` or `table`), `ranks` and `axis` (true or false), `max` (a fixed full-width value, 0 to follow the leader), `ease`.
+- **Words and numbers:** `title`, `sub` (a second line), `src` (a source credit), `pre`, `suf`, `dec`, `sep`, `abbr` (true shows 1.2M).
+- **Look:** `shape` (`soft`, `square`, `pill`), `fill` (`solid`, `gradient`), `names` (`side`, `above`, `inside`), `pal` (`contrast` is color-safe, `mono` is slate grays, `neon` suits dark backgrounds).
+- **Highlight:** `hl` takes one item's name. Use it only when you know the name is in the user's table, or the sample data if they want a demo.
+- **Sound:** `tick` (`off`, `tick`, `pop`, `blip`) plays each time the step changes.
+- **Only on the page:** the table itself, a color or logo for each item, seconds for a single step, the user's own step sound and music, and undo, reordering and CSV export. Negative values work in the table.
+
+Do not promise a finished video, and do not invent options the schema does not list. Icons, images and audio that need an upload are not available through this server. For the text message chat that means pictures in messages, avatar pictures, own sounds and the audio of voice notes; for the search bar typing it means own key and click sounds; for the bar chart race, logos, the user's own step sound and music. A picture message in a link shows a stand-in, and a voice note is silent until the user uploads the audio on the page (it stays in their browser). For the film leader countdown that means a background image (one, or one per count) and the user's own audio: set the background color and the built-in sound through the options, and tell the user to open the link and upload their own image or audio on the page (it stays in their browser). The countdown also has `num`, `cross` and `circles` options to hide the big number, the crosshair and the two circles.
